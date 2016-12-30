@@ -18,8 +18,11 @@ After this, you have to repo sync, with the command
 It will take some time, it depends by your connection speed.
 When it will finish, repo sync again (just for being sure).
 
-Now, go to 
-Go to device/samsung/jf-common and open BoardConfigCommon.mk
+Nautilus, CTRL+H, cd repo, mkdir local_manifests, copy mine
+
+Repo sync again
+
+Now, go to device/samsung/jf-common and open BoardConfigCommon.mk
 Here, set the "BOARD_RECOVERYIMAGE_PARTITION_SIZE :=" to "11300000" or more, otherwise the build will fail.
 
 Now, prepare yourself for the building itself. Type in the terminal
