@@ -4,7 +4,22 @@ Local manifest for S4 Active International (GT-I9525)
 
 ##How to build
 
-After repo syncing, go to device/samsung/jf-common and open BoardConfigCommon.mk
+First of all create a folder where you want. I created mine in a subfolder inside my home. To do so, open your terminal and type
+> mkdir CM14.1
+
+Then enter in the folder just created
+> cd CM.14.1
+
+Now init the project, in this case the JDCTeam's project. To do so type in terminal
+> repo init -u git://github.com/JDCTeam/manifests.git -b opt-cm-14.1
+
+After this, you have to repo sync, with the command
+> repo sync
+It will take some time, it depends by your connection speed.
+When it will finish, repo sync again (just for being sure).
+
+Now, go to 
+Go to device/samsung/jf-common and open BoardConfigCommon.mk
 Here, set the "BOARD_RECOVERYIMAGE_PARTITION_SIZE :=" to "11300000" or more, otherwise the build will fail.
 
 Now, prepare yourself for the building itself. Type in the terminal
@@ -33,4 +48,4 @@ If it fail, don't mind. Type
 
 > brunch launch -j*
 
-Where * is the number of cores of your CPU (example: 2 cores= `brunch launch -j2`)
+Where * is the number of cores of your CPU (example: for 2 cores type `brunch launch -j2`)
