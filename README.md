@@ -33,4 +33,4 @@ If it fail, don't mind. Type
 
 > brunch launch -j*
 
-Where * is the number of cores of your CPU
+Where * is the number of cores of your CPU (example: 2 cores= `brunch launch -j2`)
