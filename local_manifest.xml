@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project path="device/samsung/jactivelte" name="ivancristina5/android_device_samsung_jactivelte" remote="github" revision="cm-14.1"/>
-  <!--project path="device/samsung/jf-common" name="JDCTeam/android_device_samsung_jf-common" remote="github" revision="opt-cm-14.1"/>
+  <project path="device/samsung/jf-common" name="JDCTeam/android_device_samsung_jf-common" remote="github" revision="opt-cm-14.1"/>
   <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-14.1" />
-  <project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-14.1"/-->
+  <project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-14.1"/>
   <project path="external/stlport" name="CyanogenMod/android_external_stlport" remote="github" revision="cm-14.1" />
-  <!--project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung" remote="github" revision="cm-14.1" /-->
-  <!--project path="vendor/samsung/jactivelte" name="ivancristina5/proprietary_vendor_samsung" remote="github" revision="jactivelte-cm14.1" /-->
+  <project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung" remote="github" revision="cm-14.1" />
+  <project path="vendor/samsung/jactivelte" name="ivancristina5/proprietary_vendor_samsung" remote="github" revision="jactivelte-cm14.1" />
 </manifest>
 
 <!-- If there are duplicates, just comment them. The build will not be affected-->
