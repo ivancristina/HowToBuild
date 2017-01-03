@@ -44,7 +44,7 @@ If there are some duplicates, just comment them. To do so, put `!--` and `--` re
 So `<project *blablablahere* />` would become `<!--project *blablablahere* /-->`
 
 
-Now, go to `CM14.1/device/samsung/jf-common` and open BoardConfigCommon.mk
+Now, go to `CM14.1/device/samsung/jf-common` and open `BoardConfigCommon.mk`
 Here, if `BOARD_RECOVERYIMAGE_PARTITION_SIZE :=` is not set to `11300000` or more, change it, otherwise the build will fail.
 
 ###Building the ROM
