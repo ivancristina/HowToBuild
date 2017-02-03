@@ -33,9 +33,18 @@ First of all we need to setup the repo binary, with the commands:
      $ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
      $ chmod a+x ~/bin/repo
 
-Now create a folder for the sources where you want. I created mine in a subfolder inside my home. To do so, open your terminal and type `mkdir LOS` or change `LOS` to whatever you want.
+Now create a folder for the sources where you want. I created mine in a subfolder inside my home. To do so, open your terminal and type 
 
-Then enter in the folder just created with `cd LOS` or `cd nameofthefolder`
+     $ mkdir LOS
+Or change `LOS` to whatever you want.
+Then enter in the folder just created with:
+
+     $ cd "FOLDER NAME"
+
+You have now to configure your github account. To do so:
+
+	 $ git config --global user.name "YOUR NAME" 
+	 $ git config --global user.email "YOUR EMAIL ADDRESS"
 
 Now init the project, in this case I'll use the JDCTeam's project. To do so type in terminal
 > repo init -u git://github.com/JDCTeam/manifests.git -b opt-cm-14.1
