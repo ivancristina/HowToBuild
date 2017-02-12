@@ -67,7 +67,7 @@ If there are some duplicates, just comment them. To do so, put `!--` and `--` re
 So `<project *blablablahere* />` would become `<!--project *blablablahere* /-->`
 
 
-Now, go to `CM14.1/device/samsung/jf-common` and open `BoardConfigCommon.mk`
+Now, go to `LOS/device/samsung/jf-common` and open `BoardConfigCommon.mk`
 Here, if `BOARD_RECOVERYIMAGE_PARTITION_SIZE :=` is not set to `11300000` or more, change it, otherwise the build will fail.
 
 ###Setting Ccache
@@ -89,7 +89,7 @@ In terminal type:
         $ ls
         
 You should see `jactivelte`, `jf-common` and `qcom-common`. Well, if you don't, you missed some step. Now, open these folders. Rename any `cm.dependencies` into `lineage.dependencies`, without editing anything.
-If there is `cm.mk` too (but it shouldn't), rename it `lineage.mk`, then open it and at the bottom replace `cm_jactivelte` with `lineage.jactivelte`.
+If there is `cm.mk` too (but it shouldn't), rename it `lineage.mk`, then open it and at the bottom replace `cm_jactivelte` with `lineage_jactivelte`.
 
 
 ###Building the ROM
@@ -110,7 +110,7 @@ Write your password and press enter. This will enable the root access to every c
         $ brunch jactivelte
 
 Now wait some hours (or some minutes if your PC is a beast), and you'll get your ready-to-flash ROM zip!
-You can find it in `home/CM14.1/out/target/product/jactivelte`
+You can find it in `home/LOS/out/target/product/jactivelte`
 
 If you want to build again, with updated sources:
 
