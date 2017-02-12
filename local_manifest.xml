@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remove-project name="dkati/Optimized-AromaInstaller"  />
-	<remove-project name="dkati/OptimizedCM-flashables"  />
+  <remove-project name="dkati/OptimizedCM-flashables"  />
   <remove-project name="JDCTeam/android_device_samsung_jf-common"  />
   <remove-project name="JDCTeam/android_device_samsung_jflte"  />
   <remove-project name="JDCTeam/proprietary_vendor_samsung"  />
