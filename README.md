@@ -52,11 +52,11 @@ Now init the project, in this case I'll use the JDCTeam's project. To do so type
 If you want to repo sync RR
 > repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
 
-Instead, for clean LienageOS
+Instead, for clean LineageOS
 > repo init -u git://github.com/LineageOS/android.git -b cm-14.1
 
 After this, you have to repo sync, with the command
-> repo sync
+> repo sync -f --force-sync --no-clone-bundle
 
 It will take some hours, it depends by your connection speed.
 When it will finish, repo sync again (just for being sure).
@@ -115,7 +115,7 @@ You can find it in `home/LOS/out/target/product/jactivelte`
 If you want to build again, with updated sources:
 
       $ make clean
-      $ repo sync --force-sync
+      $ repo sync -f --force-sync --no-clone-bundle
       $ . build/envsetup.sh && brunch jactivelte
       
 Remember to put in your credit EVERYONE who helped you or provided you the sources, like CyanogenMod, LineageOS, XOSP, RR and so on and so on.
