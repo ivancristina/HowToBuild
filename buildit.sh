@@ -4,12 +4,11 @@
 # Usage: ./buildit.sh
 #
 
-
 # Tell the environment not to use NINJA
 #	export USE_NINJA=false
 
 # Delete the JACK server located in /home/<USER>/.jack*
-	rm -rf ~/.jack*
+	rm -rf /root/.jack*
 
 # Resize the JACK Heap size
 	export ANDROID_JACK_VM_ARGS="-Xmx4g -Dfile.encoding=UTF-8 -XX:+TieredCompilation"
@@ -24,8 +23,8 @@
 
 # Make a clean build, building dirty after you have had jack issues may result in a failed build
 	make clean
-	rm -rf /home/ivan/RR/out
+	rm -rf /home/"YOURNAMEHERE"/"YOURFOLDERHERE"/out
 	echo Removed out directory.
 
 # Compile the build
-	make bootimage
+	. build/envsetup.sh && brunch jactivelte

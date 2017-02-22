@@ -12,7 +12,7 @@
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
   <project path="packages/apps/Settings" name="ivancristina5/android_packages_apps_Settings" remote="github" revision="cm-14.1" />
   <project path="packages/apps/STweaks" name="ivancristina5/STweaks" remote="github" revision="cm-14.1" />
-  <project path="vendor/samsung" name="ivancristina5/proprietary_vendor_samsung" remote="github" revision="cm-14.1" />
+  <project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="cm-14.1" />
   <project path="vendor/qcom/binaries" name="LineageOS/proprietary_vendor_qcom_binaries" remote="github" revision="cm-14.1" />
 </manifest>
 
