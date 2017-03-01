@@ -14,8 +14,8 @@
   <project path="packages/apps/STweaks" name="ivancristina5/STweaks" remote="github" revision="cm-14.1"" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="B--B/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-eabi-4.9-Linaro-generic" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="JDCTeam/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-linux-androideabi-4.9-Linaro" />
-  <project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="cm-14.1" />
-  <project path="vendor/qcom/binaries" name="LineageOS/proprietary_vendor_qcom_binaries" remote="github" revision="cm-14.1" />
+  <project path="vendor/samsung" name="tsvietOK/proprietary_vendor_samsung" remote="github" revision="cm-14.1" />
+  <project path="vendor/qcom/binaries" name="TheMuppets/proprietary_vendor_qcom_binaries" remote="github" revision="cm-14.1" />
 </manifest>
 
 <!-- If there are duplicates, just comment them. The build will not be affected-->
