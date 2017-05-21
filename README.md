@@ -2,9 +2,9 @@
 
 Local manifest for S4 Active International (GT-I9525)
 
-##How to build
+## How to build
 
-###Setup the machine
+### Setup the machine
 
 Download any Debian based distro, burn it in a USB and install it or just create a virtual machine.
 I advice you to install Ubuntu 16.04 Xenial. Don't install it on virtual machine if you've got a low specs PC.
@@ -24,7 +24,7 @@ If some package like `lib32z1-dev` causes `error code (1)`, just remove it from 
 
 Now, you successfully setted up your building machine.
 
-###Manage your repos
+### Manage your repos
 
 First of all we need to setup the repo binary, with the commands:
 
@@ -70,7 +70,7 @@ So `<project *blablablahere* />` would become `<!--project *blablablahere* /-->`
 Now, go to `LOS/device/samsung/jf-common` and open `BoardConfigCommon.mk`
 Here, if `BOARD_RECOVERYIMAGE_PARTITION_SIZE :=` is not set to `11300000` or more, change it, otherwise the build will fail.
 
-###Setting Ccache
+### Setting Ccache
 
 This step should improve the building speed, but it require some space (just like a cache, considering that it IS a cache).
 
@@ -79,7 +79,7 @@ This step should improve the building speed, but it require some space (just lik
 
 If you don't have so much space, I advice you to give 50G instead of 100G. Less is useless IMHO.
 
-###Configure the repos
+### Configure the repos
 
 CyanogenMod (RIP) left the show to LineageOS. Unfortunately someone still didn't notice it. The sources, indeed, could still be setted up for CyanogenMod. Don't mind, it's not that difficult, we could solve together.
 
@@ -92,7 +92,7 @@ You should see `jactivelte`, `jf-common` and `qcom-common`. Well, if you don't, 
 If there is `cm.mk` too (but it shouldn't), rename it `lineage.mk`, then open it and at the bottom replace `cm_jactivelte` with `lineage_jactivelte`.
 
 
-###Building the ROM
+### Building the ROM
 
 Now, prepare yourself for the building itself. Type in the terminal:
 
