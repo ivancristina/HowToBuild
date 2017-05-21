@@ -55,8 +55,9 @@ If you want to repo sync RR
 Instead, for clean LineageOS
 > repo init -u git://github.com/LineageOS/android.git -b cm-14.1
 
-After this, you have to repo sync, with the command
-> repo sync -f --force-sync --no-clone-bundle
+After this, you have to repo sync, with the command:
+
+        $ repo sync -f --force-sync --no-clone-bundle
 
 It will take some hours, it depends by your connection speed.
 When it will finish, repo sync again (just for being sure).
