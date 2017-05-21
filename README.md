@@ -1,10 +1,4 @@
-# Local Manifest
-
-Local manifest for S4 Active International (GT-I9525)
-
-## How to build
-
-### Setup the machine
+# Setup the machine
 
 Download any Debian based distro, burn it in a USB and install it or just create a virtual machine.
 I advice you to install Ubuntu 16.04 Xenial. Don't install it on virtual machine if you've got a low specs PC.
@@ -14,7 +8,7 @@ Now, open a terminal and write the command:
 	$ sudo apt-add-repository ppa:openjdk-r/ppa -y; sudo apt update -y; sudo apt install git-core python gnupg flex bison gperf libsdl1.2-dev libesd0-dev \
 	squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush \
 	schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32ncurses5-dev \
-	gcc-multilib liblz4-* pngquant ncurses-dev texinfo gcc gperf patch libtool \
+	gcc-multilib liblz4-* pngquant ncurses-dev texinfo gcc gperf patch ccache libtool \
 	automake g++ gawk subversion expat libexpat1-dev python-all-dev bc libcloog-isl-dev \
 	libcap-dev autoconf libgmp-dev build-essential gcc-multilib g++-multilib pkg-config libmpc-dev libmpfr-dev lzma* \
 	liblzma* w3m android-tools-adb maven ncftp htop repo lib32z1-dev -y
@@ -24,7 +18,7 @@ If some package like `lib32z1-dev` causes `error code (1)`, just remove it from 
 
 Now, you successfully setted up your building machine.
 
-### Manage your repos
+# Manage your repos
 
 First of all we need to setup the repo binary, with the commands:
 
@@ -62,8 +56,9 @@ After this, you have to repo sync, with the command:
 It will take some hours, it depends by your connection speed.
 When it will finish, repo sync again (just for being sure).
 
-Now open any file manager (if you're on Ubuntu, it will be Nautilus), press CTRL+H, open the folder .repo, create a new folder called "local_manifests", open put my local_manifest.xml there.
-Repo sync again.
+Now open any file manager (if you're on Ubuntu, it will be Nautilus), press CTRL+H, open the folder .repo, create a new folder called `local_manifests`.
+In base ofr the OS you want to build, choose between by <a href="los_manifest.xml" download>LineageOS</a>, <a href="rr_manifest.xml" download>Resurrection Remix OS</a>, <a href="side_manifest.xml" download>Side</a> or <a href="opt_manifest.xml" download>OptimisedLOS</a> local_manifests.
+Now rename the file you downloaded into `local_manifest.xml` and move it to the `local_manifests` folder you just created. Repo sync again.
 If there are some duplicates, just comment them. To do so, put `!--` and `--` respectively before and after the duplicate paths.
 So `<project *blablablahere* />` would become `<!--project *blablablahere* /-->`
 
@@ -71,7 +66,7 @@ So `<project *blablablahere* />` would become `<!--project *blablablahere* /-->`
 Now, go to `LOS/device/samsung/jf-common` and open `BoardConfigCommon.mk`
 Here, if `BOARD_RECOVERYIMAGE_PARTITION_SIZE :=` is not set to `11300000` or more, change it, otherwise the build will fail.
 
-### Setting Ccache
+# Setting ccache
 
 This step should improve the building speed, but it require some space (just like a cache, considering that it IS a cache).
 
@@ -80,7 +75,7 @@ This step should improve the building speed, but it require some space (just lik
 
 If you don't have so much space, I advice you to give 50G instead of 100G. Less is useless IMHO.
 
-### Configure the repos
+# Configure the repos
 
 CyanogenMod (RIP) left the show to LineageOS. Unfortunately someone still didn't notice it. The sources, indeed, could still be setted up for CyanogenMod. Don't mind, it's not that difficult, we could solve together.
 
@@ -93,7 +88,7 @@ You should see `jactivelte`, `jf-common` and `qcom-common`. Well, if you don't, 
 If there is `cm.mk` too (but it shouldn't), rename it `lineage.mk`, then open it and at the bottom replace `cm_jactivelte` with `lineage_jactivelte`.
 
 
-### Building the ROM
+# Building the ROM
 
 Now, prepare yourself for the building itself. Type in the terminal:
 
